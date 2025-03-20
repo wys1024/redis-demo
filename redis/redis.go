@@ -7,6 +7,7 @@ import (
 
 // 获取redis连接
 func GetConnect() (*redis.Client, error) {
+	// 创建Redis客户端
 	rdb := redis.NewClient(&redis.Options{
 		Addr:     "localhost:6379",
 		Password: "", // no password set
